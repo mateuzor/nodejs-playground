@@ -22,8 +22,6 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ dest: os.tmpdir() });
-
 app.use(cors());
 
 app.get("/", (req, res) => {
